@@ -1,11 +1,10 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 import java.util.ArrayList;
 
 public class ArraylistExample {
 
 	public static void main(String[] args) {
-
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("hello");
 		list.add("world");
@@ -15,4 +14,5 @@ public class ArraylistExample {
 			System.out.println(newList);
 		}
 	}
+
 }

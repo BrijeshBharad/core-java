@@ -1,8 +1,9 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 public class TryCatchExample {
 
 	public static void main(String[] args) {
+		
 		int upperVar = 50;
 		int downVar = 0;
 
@@ -13,4 +14,5 @@ public class TryCatchExample {
 			System.out.println("this is not valide values");
 		}
 	}
+	
 }

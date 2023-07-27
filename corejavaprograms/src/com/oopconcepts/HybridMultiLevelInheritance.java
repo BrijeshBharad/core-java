@@ -1,4 +1,4 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 public class HybridMultiLevelInheritance extends Parent {
 

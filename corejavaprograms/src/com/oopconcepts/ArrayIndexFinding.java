@@ -1,11 +1,18 @@
-package com.OopConcepts;
+package com.oopconcepts;
+
+import java.util.Scanner;
 
 public class ArrayIndexFinding {
 
 	public static void main(String[] args) {
+		
 		int[] firstArray = { 25, 11, 22, 33, 65, 96, 44, 56, 66 };
-
-		System.out.println("index number of 33 is " + findIndex(firstArray, 33));
+		
+		System.out.println("enter the number of which you want to know index");
+		Scanner inputFromUser = new Scanner(System.in);
+		int compareNumber = inputFromUser.nextInt();
+		
+		System.out.println(findIndex(firstArray, compareNumber));
 	}
 
 	public static int findIndex(int[] firstArray, int number) {
@@ -19,6 +26,6 @@ public class ArrayIndexFinding {
 			}
 		}
 		return 0;
-
 	}
+	
 }

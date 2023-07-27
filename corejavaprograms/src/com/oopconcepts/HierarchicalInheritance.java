@@ -1,9 +1,9 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 public class HierarchicalInheritance extends employee {
 	public static void main(String[] args) {
-		employee empObj = new employee();
-		empObj.toShow();
+		employee employeeObject = new employee();
+		employeeObject.toShow();
 	}
 }
 

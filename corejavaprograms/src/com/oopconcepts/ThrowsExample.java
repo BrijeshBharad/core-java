@@ -1,12 +1,13 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 public class ThrowsExample {
 
 	public static void main(String[] args) throws Exception {
-ThrowsExample Obj=new ThrowsExample();
-Obj.method();
+		ThrowsExample exceptionObject = new ThrowsExample();
+		exceptionObject.method();
 	}
-	void method() throws Exception{
+
+	void method() throws Exception {
 		throw new ArithmeticException("this is not good");
 	}
 

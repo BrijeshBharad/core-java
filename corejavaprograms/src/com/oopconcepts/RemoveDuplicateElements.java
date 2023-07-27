@@ -1,4 +1,4 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +13,7 @@ public class RemoveDuplicateElements {
 
 		Set<Integer> convert = new HashSet<>();
 		convert.addAll(oldList);
-		System.out.println(convert);
+		System.out.println("list without duplicate elements "+convert);
 	}
 
 }

@@ -1,9 +1,10 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 public class FinallyExample {
+
 	public static void main(String[] args) {
 		int varOne = 50;
-		int varTwo = 10;
+		int varTwo = 0;
 		int result;
 		try {
 			System.out.println(result = varOne / varTwo);
@@ -11,4 +12,5 @@ public class FinallyExample {
 			System.out.println(varOne * varTwo);
 		}
 	}
+
 }

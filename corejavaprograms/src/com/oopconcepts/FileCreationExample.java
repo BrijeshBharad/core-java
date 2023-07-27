@@ -1,4 +1,4 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -7,10 +7,11 @@ import java.io.IOException;
 public class FileCreationExample {
 
 	public static void main(String[] args) {
-		File Obj = new File("G:\\ff\\newfile2.txt");
+		
+		File fileCreationObject = new File("G:\\ff\\newfile2.txt");
 		try {
-			if (Obj.createNewFile()) {
-				System.out.println("file created: " + Obj.getName());
+			if (fileCreationObject.createNewFile()) {
+				System.out.println("file created: " + fileCreationObject.getName());
 			} else {
 				System.out.println("file already exists");
 			}
@@ -18,9 +19,6 @@ public class FileCreationExample {
 			System.out.println("error occured");
 			e.printStackTrace();
 		}
-
-		
-
 	}
 
 }

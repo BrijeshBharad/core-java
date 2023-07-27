@@ -1,6 +1,7 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 public class EncapsulationProgram {
+	
 	private int rollNo;
 	private String name;
 	private String collegeName;

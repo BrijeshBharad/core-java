@@ -1,7 +1,12 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 public class AbstractionMain extends Secondary {
+
 	public static void main(String[] args) {
+
+		AbstractionMain abstractionobj = new AbstractionMain();
+		abstractionobj.normalMethod();
+		abstractionobj.abstractMethod();
 
 	}
 
@@ -14,9 +19,11 @@ public class AbstractionMain extends Secondary {
 }
 
 abstract class Secondary {
+
 	abstract void abstractMethod();
 
 	void normalMethod() {
 		System.out.println("this is normal method");
 	}
+
 }

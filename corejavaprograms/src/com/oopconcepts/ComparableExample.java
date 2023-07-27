@@ -1,4 +1,4 @@
-package com.OopConcepts;
+package com.oopconcepts;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,44 +6,45 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ComparableExample {
+
 	public static void main(String[] args) {
-		Comparator<Student> com = new Comparator<Student>() {
 
-			@Override
-			public int compare(Student o1, Student o2) {
-				if (o1.age > o2.age)
-					return 1;
-				else
-					return -1;
-			}
-		};
-		List<Student> list = new ArrayList<>();
-		list.add(new Student(25, "rakesh"));
-		list.add(new Student(47, "romit"));
+		ArrayList<Student> list = new ArrayList<>();
 
-		list.add(new Student(66, "hitesh"));
+		list.add(new Student(23, "brijesh", "birla"));
+		list.add(new Student(8, "rakesh", "silveroak"));
+		list.add(new Student(17, "anjali", "nirma"));
+		list.add(new Student(53, "narmada", "gujrat"));
 
-		list.add(new Student(23, "bulbul"));
-		list.add(new Student(25, "rakesh"));
+		System.out.println(list);
 		Collections.sort(list);
-		// System.out.println(list);
-		for (Student s : list) {
-			System.out.println(s);
-		}
-
+		System.out.println(list);
 	}
-
 }
 
 class Student implements Comparable<Student> {
-	int age;
-	String name;
 
-	public int getAge() {
+	private int age;
+	private String name;
+	private String college;
+
+	@Override
+	public String toString() {
+		return "Student [age=" + age + ", name=" + name + ", college=" + college + "]";
+	}
+
+	public Student(int age, String name, String college) {
+		super();
+		this.age = age;
+		this.name = name;
+		this.college = college;
+	}
+
+	public int getage() {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setage(int age) {
 		this.age = age;
 	}
 
@@ -55,20 +56,18 @@ class Student implements Comparable<Student> {
 		this.name = name;
 	}
 
-	public Student(int age, String name) {
-		super();
-		this.age = age;
-		this.name = name;
+	public String getCollege() {
+		return college;
 	}
 
-	public String toString() {
-		return "Student [age=" + age + ", name=" + name + "]";
+	public void setCollege(String college) {
+		this.college = college;
 	}
 
-	public int compareTo(Student that) {
-		if (this.age > that.age)
-			return 1;
-		else
-			return -1;
+	@Override
+	public int compareTo(Student o) {
+
+		return this.age - o.age;
 	}
+
 }
