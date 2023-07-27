@@ -6,8 +6,10 @@ public class SwitchStatement {
 
 	public static void main(String[] args) {
 		System.out.println("enter your number");
-		Scanner sc = new Scanner(System.in);
-		int number = sc.nextInt();
+
+		Scanner scanFromUser = new Scanner(System.in);
+
+		int number = scanFromUser.nextInt();
 
 		switch (number) {
 		case 1: {
@@ -74,7 +76,6 @@ public class SwitchStatement {
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + number);
 		}
-
 	}
 
 }

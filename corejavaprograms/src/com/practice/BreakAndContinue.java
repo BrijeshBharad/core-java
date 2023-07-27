@@ -12,7 +12,6 @@ public class BreakAndContinue {
 			}
 			System.out.println(i);
 		}
-
 	}
 
 }

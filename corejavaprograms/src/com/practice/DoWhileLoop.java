@@ -1,6 +1,7 @@
 package com.practice;
 
 public class DoWhileLoop {
+
 	public static void main(String[] args) {
 		int number = 10;
 		do {
@@ -8,4 +9,5 @@ public class DoWhileLoop {
 			number--;
 		} while (number > 0);
 	}
+
 }

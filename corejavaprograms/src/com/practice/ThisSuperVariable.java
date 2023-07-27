@@ -1,13 +1,16 @@
 package com.practice;
 
 public class ThisSuperVariable {
+
 	public static void main(String[] args) {
-		TestOne newObj = new TestOne();
-		newObj.toShow();
+		TestOne testThisKeyword = new TestOne();
+		testThisKeyword.toShow();
 	}
+
 }
 
 class TestOne extends SuperOne {
+
 	String colour = "white";
 
 	void toShow() {
@@ -20,4 +23,5 @@ class TestOne extends SuperOne {
 class SuperOne {
 
 	String colour = "black";
+
 }

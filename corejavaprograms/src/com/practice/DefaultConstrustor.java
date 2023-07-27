@@ -3,7 +3,7 @@ package com.practice;
 public class DefaultConstrustor {
 
 	DefaultConstrustor() {
-		System.out.println("created");
+		System.out.println("constructor is created");
 	}
 
 	public static void main(String[] args) {

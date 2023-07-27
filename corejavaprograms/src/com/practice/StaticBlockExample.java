@@ -1,16 +1,20 @@
 package com.practice;
 
- class main  {
-int nonStatic;
-static int staticVarible;
-	
+class main {
+
+	static int staticVarible;
+
 	static {
-		staticVarible=15;
+		staticVarible = 15;
 		System.out.println("static block called");
 	}
+
 }
- class StaticBlocKExample{
+
+class StaticBlockExample {
+
 	public static void main(String[] args) {
 		System.out.println(main.staticVarible);
 	}
+
 }
