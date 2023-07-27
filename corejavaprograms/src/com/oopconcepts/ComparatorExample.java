@@ -15,7 +15,7 @@ public class ComparatorExample {
 		listSecond.add(new StudentSecond(53, "narmada", "gujrat"));
 
 		System.out.println(listSecond);
-		Collections.sort(listSecond, new idSort_Comparator());
+		Collections.sort(listSecond, new IdSortComparator());
 		System.out.println(listSecond);
 	}
 
