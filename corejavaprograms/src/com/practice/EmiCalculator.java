@@ -8,33 +8,32 @@ public class EmiCalculator {
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("please enter your principl amount");
-		int principleAmount = scanner.nextInt();
+		double principleAmount = scanner.nextDouble();
 
 		System.out.println("now please enter your rate of interest ");
 		Double interestInPer = scanner.nextDouble();
 
 		System.out.println("now enter the tenure in months");
-		int tenure = scanner.nextInt();
+		double tenure = scanner.nextDouble();
 
-		Double interest = interestInPer / (tenure * 10);
+		Double interest = interestInPer / (12 * 100);
 		System.out.println(interest);
+		double tenureInMonths = tenure;
+		System.out.println(tenureInMonths);
 		/*
-		 * P x R x (1+R)^N / [(1+R)^N-1]
+		 * P x R x (1+R)^N / [((1+R)^N)-1]
 		 */
 
-		Double raiseUpper = (Double) Math.pow((1.0 + interest), tenure);
-		
+		Double raiseUpper = (Double) Math.pow((1.0 + interest), tenureInMonths);
+
 		Double upper = (principleAmount * interest * raiseUpper);
-		
-		Double raiseDown = (Double) Math.pow((1 + interest), tenure - 1);
-		
-		Double emi = upper / raiseDown;
-		System.out.println(principleAmount);
-		System.out.println(interestInPer);
-		System.out.println(tenure);
-		System.out.println(raiseUpper);
-		System.out.println(upper);
-		System.out.println(raiseDown);
+
+		Double raiseDown = (Double) Math.pow((1 + interest), tenureInMonths);
+
+		Double down = raiseDown - 1;
+
+		Double emi = upper / down;
+
 		System.out.println(emi);
 	}
 
