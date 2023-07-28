@@ -3,8 +3,8 @@ package com.practice;
 public class ThisSuperVariable {
 
 	public static void main(String[] args) {
-		TestOne testThisKeyword = new TestOne();
-		testThisKeyword.toShow();
+		TestOne testOne = new TestOne();
+		testOne.toShow();
 	}
 
 }

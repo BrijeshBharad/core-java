@@ -7,9 +7,9 @@ public class SwitchStatement {
 	public static void main(String[] args) {
 		System.out.println("enter your number");
 
-		Scanner scanFromUser = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 
-		int number = scanFromUser.nextInt();
+		int number = scanner.nextInt();
 
 		switch (number) {
 		case 1: {

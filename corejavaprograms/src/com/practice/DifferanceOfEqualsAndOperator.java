@@ -1,3 +1,4 @@
+
 package com.practice;
 
 public class DifferanceOfEqualsAndOperator {
@@ -29,4 +30,5 @@ public class DifferanceOfEqualsAndOperator {
 		System.out.println(firstNumber == secondNumber);
 		// equalsTo method only works for String
 	}
+	
 }

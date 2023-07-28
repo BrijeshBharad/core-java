@@ -11,7 +11,6 @@ public class ExampleOfStatic {
 	}
 
 }
-
 class SecondClass {
 	
 	String phoneName;

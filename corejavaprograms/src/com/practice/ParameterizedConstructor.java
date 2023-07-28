@@ -1,6 +1,7 @@
 package com.practice;
 
 public class ParameterizedConstructor {
+
 	String name_var;
 	int number_var;
 
