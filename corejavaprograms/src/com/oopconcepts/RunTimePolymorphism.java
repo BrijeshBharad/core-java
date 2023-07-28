@@ -8,8 +8,8 @@ public class RunTimePolymorphism extends TestRunTime {
 	}
 
 	public static void main(String[] args) {
-		RunTimePolymorphism runTimeObj = new RunTimePolymorphism();
-		runTimeObj.toRide();
+		RunTimePolymorphism runTimePolymorphism = new RunTimePolymorphism();
+		runTimePolymorphism.toRide();
 	}
 
 }

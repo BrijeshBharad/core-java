@@ -3,24 +3,23 @@ package com.oopconcepts;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-
+//IdSortComparator joined with IdSortComparator
 public class ComparatorExample {
 
 	public static void main(String[] args) {
-		ArrayList<StudentSecond> listSecond = new ArrayList<>();
+		ArrayList<StudentSecond> arrayList = new ArrayList<>();
 
-		listSecond.add(new StudentSecond(23, "brijesh", "birla"));
-		listSecond.add(new StudentSecond(8, "rakesh", "silveroak"));
-		listSecond.add(new StudentSecond(17, "anjali", "nirma"));
-		listSecond.add(new StudentSecond(53, "narmada", "gujrat"));
+		arrayList.add(new StudentSecond(23, "brijesh", "birla"));
+		arrayList.add(new StudentSecond(8, "rakesh", "silveroak"));
+		arrayList.add(new StudentSecond(17, "anjali", "nirma"));
+		arrayList.add(new StudentSecond(53, "narmada", "gujrat"));
 
-		System.out.println(listSecond);
-		Collections.sort(listSecond, new IdSortComparator());
-		System.out.println(listSecond);
+		System.out.println(arrayList);
+		Collections.sort(arrayList, new IdSortComparator());
+		System.out.println(arrayList);
 	}
 
 }
-
 class StudentSecond {
 
 	private int id;

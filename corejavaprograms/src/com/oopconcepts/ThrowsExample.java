@@ -3,8 +3,8 @@ package com.oopconcepts;
 public class ThrowsExample {
 
 	public static void main(String[] args) throws Exception {
-		ThrowsExample exceptionObject = new ThrowsExample();
-		exceptionObject.method();
+		ThrowsExample throwExample = new ThrowsExample();
+		throwExample.method();
 	}
 
 	void method() throws Exception {

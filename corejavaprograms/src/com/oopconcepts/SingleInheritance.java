@@ -1,6 +1,6 @@
 package com.oopconcepts;
 
-public class singleInheritance extends SecondaryClass {
+public class SingleInheritance extends SecondaryClass {
 
 	public static void main(String[] args) {
 		parentMethod();

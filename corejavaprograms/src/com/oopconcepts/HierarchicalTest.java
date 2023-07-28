@@ -1,9 +1,10 @@
 package com.oopconcepts;
 
-public class HierarchicalTest extends employee {
+public class HierarchicalTest extends Employee {
 
 	public static void main(String[] args) {
-		employee employeeObjectSecond = new employee();
-		employeeObjectSecond.toShow();
+		Employee employeeSecond = new Employee();
+		employeeSecond.toShow();
 	}
+
 }

@@ -10,9 +10,7 @@ public class FileWriteExample {
 			FileWriter fileWriteObject = new FileWriter("newfile.txt");
 			fileWriteObject.write("i am brijesh bharad : 22 : java developes");
 			fileWriteObject.close();
-
 			System.out.println("successfully wrote");
-
 		} catch (IOException e) {
 			System.out.println("error occured");
 			e.printStackTrace();

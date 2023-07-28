@@ -7,6 +7,6 @@ public class ThrowKeywordExample {
 		if (age < 18) {
 			throw new ArithmeticException("age is not valide");
 		}
-
 	}
+
 }

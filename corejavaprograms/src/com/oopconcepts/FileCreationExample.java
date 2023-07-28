@@ -7,7 +7,6 @@ import java.io.IOException;
 public class FileCreationExample {
 
 	public static void main(String[] args) {
-		
 		File fileCreationObject = new File("G:\\ff\\newfile2.txt");
 		try {
 			if (fileCreationObject.createNewFile()) {

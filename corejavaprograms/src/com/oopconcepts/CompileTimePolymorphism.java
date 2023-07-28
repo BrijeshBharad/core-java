@@ -11,8 +11,9 @@ public class CompileTimePolymorphism {
 	}
 
 	public static void main(String[] args) {
-		CompileTimePolymorphism polymorphismObject = new CompileTimePolymorphism();
-		polymorphismObject.toShow(25);
-		polymorphismObject.toShow(36, "vivek");
+		CompileTimePolymorphism compileTimePolymorphism = new CompileTimePolymorphism();
+		compileTimePolymorphism.toShow(25);
+		compileTimePolymorphism.toShow(36, "vivek");
 	}
+	
 }

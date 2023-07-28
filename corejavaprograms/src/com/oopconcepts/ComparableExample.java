@@ -8,7 +8,6 @@ import java.util.List;
 public class ComparableExample {
 
 	public static void main(String[] args) {
-
 		ArrayList<Student> list = new ArrayList<>();
 
 		list.add(new Student(23, "brijesh", "birla"));
@@ -20,6 +19,7 @@ public class ComparableExample {
 		Collections.sort(list);
 		System.out.println(list);
 	}
+
 }
 
 class Student implements Comparable<Student> {
