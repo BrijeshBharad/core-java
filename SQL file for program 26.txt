@@ -1,0 +1,187 @@
+CREATE DATABASE employee2;
+
+
+***********************************************
+
+
+CREATE TABLE hobby(
+ hobby_id INT(10) AUTO_INCREMENT,
+   NAME VARCHAR(50) ,
+   PRIMARY KEY(hobby_id)
+);
+
+CREATE TABLE employee_hobby(
+emp_hobby_id int(50) NOT null,
+    FOREIGN KEY(emp_id) REFERENCES employee(emp_id),
+    FOREIGN KEY(hobby_id) REFERENCES hobby(hobby_id)
+
+);
+
+CREATE TABLE employee(
+ emp_id int(10) AUTO_INCREMENT,
+    first_name varchar(50) ,
+    last_name varchar(50),
+    age int(10),
+    mobile_number int(50),
+    address varchar(80),
+    PRIMARY KEY(emp_id)
+);
+
+
+CREATE TABLE employee_salary(
+salary_id INT(10) NOT NULL,
+    salary INT(100) NOT NULL,
+    emp_id INT,
+  employeedate DATE,
+    PRIMARY KEY(salary_id),
+    FOREIGN KEY (emp_id) REFERENCES employee(emp_id)
+);
+
+
+*****************************************
+INSERT INTO employee_hobby (emp_hobby_id) VALUES('1');
+INSERT INTO employee_hobby (emp_hobby_id) VALUES('2');
+INSERT INTO employee_hobby (emp_hobby_id) VALUES('3');
+INSERT INTO employee_hobby (emp_hobby_id) VALUES('4');
+INSERT INTO employee_hobby (emp_hobby_id) VALUES('5');
+INSERT INTO employee_hobby (emp_hobby_id) VALUES('6');
+INSERT INTO employee_hobby (emp_hobby_id) VALUES('7');
+
+***************************************
+INSERT INTO `employee_salary`(`salary_id`, `salary`, `employeedate`) VALUES ('1','120000','2023-07-05');      
+                                                     
+INSERT INTO `employee_salary`( `salary`, `employeedate`) VALUES ('80000','2018-07-13');
+
+INSERT INTO `employee_salary`( `salary`, `employeedate`) VALUES ('25000','2013-04-09'); 
+
+INSERT INTO `employee_salary`(`salary`, `employeedate`) VALUES ('96547','2012-08-23'); 
+
+INSERT INTO `employee_salary`( `salary`, `employeedate`) VALUES ('96547','2012-08-23'); 
+
+INSERT INTO `employee_salary`( `salary`, `employeedate`) VALUES ('224000','2024-01-06'); 
+
+INSERT INTO `employee_salary`( `salary`, `employeedate`) VALUES ('26000','2029-03-12'); 
+********************************************
+
+INSERT INTO `hobby`( `name`) VALUES ('travel');
+INSERT INTO `hobby`( `name`) VALUES ('dancing');
+INSERT INTO `hobby`( `name`) VALUES ('writing');
+INSERT INTO `hobby`( `name`) VALUES ('singing');
+INSERT INTO `hobby`( `name`) VALUES ('painting');
+INSERT INTO `hobby`( `name`) VALUES ('gym');
+INSERT INTO `hobby`( `name`) VALUES ('decore');
+INSERT INTO `hobby`( `name`) VALUES ('swimming');
+INSERT INTO `hobby`( `name`) VALUES ('acting');
+INSERT INTO `hobby`( `name`) VALUES ('running');
+
+******************************************************
+
+INSERT INTO employee(emp_id,first_name,last_name,age,mobile_number,address) VALUES('1','Brijesh','Bharad','22','6353221235','ahemadabad');
+
+INSERT INTO employee(first_name,last_name,age,mobile_number,address) VALUES('jaydeep','dhameliya','29','6592358965','ahemdabad');
+
+INSERT INTO employee(first_name,last_name,age,mobile_number,address) VALUES('divyang','patel','30','9924598982','porbandar');
+
+INSERT INTO employee(first_name,last_name,age,mobile_number,address) VALUES('vishal','prajapati','23','8401798536','bhavnagar');
+
+INSERT INTO employee(first_name,last_name,age,mobile_number,address) VALUES('rahul','dravid','25','9545623154','surat');
+
+INSERT INTO employee(first_name,last_name,age,mobile_number,address) VALUES('parth','thakkar','22','9901675286','amreli');
+
+INSERT INTO employee(first_name,last_name,age,mobile_number,address) VALUES('pooja','kansara','21','635396158','rajkot');
+
+INSERT INTO employee(first_name,last_name,age,mobile_number,address) VALUES('raju','mehta','56','25698563','rajula');
+
+
+********************************************************
+
+-- SET FOREIGN_KEY_CHECKS=0; //to disable foreignkey
+-- SET FOREIGN_KEY_CHECKS=1; // to enable foreignkey
+
+************************************************
+
+DELETING DATA[
+
+DELETE  FROM hobby WHERE hobby_id=10;
+DELETE FROM employee WHERE emp_id=9;
+DELETE  FROM employee_hobby WHERE emp_hobby_id=4;
+DELETE  FROM employee_salary WHERE salary_id=10;
+]
+
+
+***************************************************************
+
+
+Create a separate select queries to get a hobby, employee, employee_salary, employee_hobby:-
+
+[
+
+select queries
+
+SELECT * FROM hobby;
+SELECT first_name FROM employee;
+SELECT salary FROM employee_salary;
+SELECT emp_hobby_id FROM employee_hobby;
+
+]
+
+
+***********************************************************************
+
+Create a select single query to get all employee name, all hobby_name in single column:-
+[
+	
+SELECT first_name FROM employee
+UNION 
+SELECT nameofhobby FROM hobby
+UNION 
+SELECT salary FROM employee_salary;
+
+]
+
+***************************************************************************
+
+Create a select query to get  employee name, his/her employee_salary:-
+
+[
+SELECT first_name,salary FROM employee
+JOIN employee_salary;
+
+]
+
+*************************************************************************
+
+SELECT 
+  CONCAT(e.first_name, " ", e.last_name) AS full_name, 
+  SUM(salary), 
+  (
+    SELECT 
+      GROUP_CONCAT(h.nameofhobby) 
+    FROM 
+      employee_hobby eh 
+      INNER JOIN hobby h ON h.hobby_id = eh.hobby_id 
+    WHERE 
+      e.emp_id = eh.emp_id
+  ) AS hobby_name 
+FROM 
+  employee AS e 
+  INNER JOIN employee_salary AS es ON e.emp_id = es.emp_id 
+GROUP BY 
+  e.emp_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
