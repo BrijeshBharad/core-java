@@ -7,7 +7,7 @@ public class DefaultConstrustor {
 	}
 
 	public static void main(String[] args) {
-		DefaultConstrustor obj = new DefaultConstrustor();
+		DefaultConstrustor defaultConstructor = new DefaultConstrustor();
 	}
 
 }
