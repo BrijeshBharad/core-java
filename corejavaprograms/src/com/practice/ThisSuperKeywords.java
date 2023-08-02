@@ -1,6 +1,6 @@
 package com.practice;
 
-public class ThisSuperVariable {
+public class ThisSuperKeywords {
 
 	public static void main(String[] args) {
 		TestOne testOne = new TestOne();
@@ -8,20 +8,18 @@ public class ThisSuperVariable {
 	}
 
 }
-
 class TestOne extends SuperOne {
 
-	String colour = "white";
-
+	String colour = "White";
+	
 	void toShow() {
 		System.out.println(colour);
 		System.out.println(super.colour);
 	}
 
 }
-
 class SuperOne {
 
-	String colour = "black";
+	String colour = "Black";
 
 }

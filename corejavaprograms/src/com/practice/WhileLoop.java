@@ -1,16 +1,14 @@
 package com.practice;
-
 import java.util.Scanner;
 
+/*
+ * this is a program to find the number is pelidrome or not
+ */
 public class WhileLoop {
 
-	/*
-	 * this is a program to find the number is pelidrome or not
-	 */
 	public static void main(String[] args) {
-		System.out.println("enter a number");
+		System.out.println("Enter a number");
 		Scanner scanner = new Scanner(System.in);
-
 		int number = scanner.nextInt();
 		int sum = 0;
 		int temporary = number;
@@ -22,9 +20,9 @@ public class WhileLoop {
 		}
 
 		if (sum == temporary) {
-			System.out.println("given number is pelidrome number");
+			System.out.println("Given number is pelidrome number");
 		} else {
-			System.out.println("this number is not a pelidrome  number");
+			System.out.println("This number is not a pelidrome  number");
 		}
 	}
 

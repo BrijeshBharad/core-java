@@ -5,72 +5,70 @@ import java.util.Scanner;
 public class SwitchStatement {
 
 	public static void main(String[] args) {
-		System.out.println("enter your number");
-
+		System.out.println("Enter your number");
 		Scanner scanner = new Scanner(System.in);
-
 		int number = scanner.nextInt();
 
 		switch (number) {
 		case 1: {
 
-			System.out.println("january");
+			System.out.println("January");
 			break;
 		}
 
 		case 2: {
 
-			System.out.println("february");
+			System.out.println("February");
 			break;
 		}
 		case 3: {
 
-			System.out.println("march");
+			System.out.println("March");
 			break;
 		}
 		case 4: {
 
-			System.out.println("april");
+			System.out.println("April");
 			break;
 		}
 		case 5: {
 
-			System.out.println("may");
+			System.out.println("May");
 			break;
 		}
 		case 6: {
 
-			System.out.println("june");
+			System.out.println("June");
 			break;
 		}
 		case 7: {
 
-			System.out.println("july");
+			System.out.println("July");
 			break;
 		}
 		case 8: {
 
-			System.out.println("august");
+			System.out.println("August");
 			break;
 		}
 		case 9: {
 
-			System.out.println("september");
+			System.out.println("September");
 			break;
 		}
 		case 10: {
 
-			System.out.println("october");
+			System.out.println("October");
 			break;
 		}
 		case 11: {
 
-			System.out.println("november");
+			System.out.println("November");
 			break;
 		}
 		case 12: {
 
-			System.out.println("december");
+			System.out.println("December");
 			break;
 		}
 		default:

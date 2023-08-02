@@ -9,21 +9,21 @@ public class StringImportantMethods {
 	}
 
 	static void charAtShow() {
-		String numberAtIndex = "harharmahadev";
+		String numberAtIndex = "Harharmahadev";
 		System.out.println((numberAtIndex.charAt(4)));
 		// with this we can know the character on any position
 	}
 
 	static void compareStrings() {
-		String firstString = "ramesh";
-		String secondString = "ramesh";
+		String firstString = "Ramesh";
+		String secondString = "Ramesh";
 		System.out.println(firstString.compareTo(secondString));
 		// by this we can compare two Strings
 	}
 
 	static void letsConcat() {
-		String employeeFirstName = "brijesh";
-		String employeeSecondName = "bharad";
+		String employeeFirstName = "Brijesh";
+		String employeeSecondName = "Bharad";
 		System.out.println(employeeFirstName.concat(employeeSecondName));
 		// with this we can join two strings
 	}

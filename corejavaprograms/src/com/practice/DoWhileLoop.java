@@ -1,5 +1,6 @@
 package com.practice;
 
+//this program will print * 10 times
 public class DoWhileLoop {
 
 	public static void main(String[] args) {
