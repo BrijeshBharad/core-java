@@ -8,7 +8,7 @@ public class ThrowsExample {
 	}
 
 	void method() throws Exception {
-		throw new ArithmeticException("this is not good");
+		throw new ArithmeticException("This is not good");
 	}
 
 }

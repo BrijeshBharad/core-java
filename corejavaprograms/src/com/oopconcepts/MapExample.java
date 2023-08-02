@@ -19,6 +19,7 @@ public class MapExample {
 			Integer val = entry.getValue();
 			System.out.println(key + " " + val);
 			// does not take duplicate keys
+			// does not take null key
 		}
 	}
 

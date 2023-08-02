@@ -10,12 +10,12 @@ public class FileCreationExample {
 		File fileCreationObject = new File("G:\\ff\\newfile2.txt");
 		try {
 			if (fileCreationObject.createNewFile()) {
-				System.out.println("file created: " + fileCreationObject.getName());
+				System.out.println("File created: " + fileCreationObject.getName());
 			} else {
-				System.out.println("file already exists");
+				System.out.println("File already exists");
 			}
 		} catch (IOException e) {
-			System.out.println("error occured");
+			System.out.println("Error occured");
 			e.printStackTrace();
 		}
 	}

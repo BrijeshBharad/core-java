@@ -3,24 +3,25 @@ package com.oopconcepts;
 public class AbstractionMain extends Secondary {
 
 	public static void main(String[] args) {
-		AbstractionMain abstractionmain = new AbstractionMain();
-		abstractionmain.normalMethod();
-		abstractionmain.abstractMethod();
+		AbstractionMain abstractionMain = new AbstractionMain();
+		abstractionMain.normalMethod();
+		abstractionMain.abstractMethod();
 	}
 
 	@Override
 	void abstractMethod() {
-		System.out.println("this is abstract method");
+		System.out.println("This is abstract method");
 	}
 
 }
 
 abstract class Secondary {
-
+	
+    //This is abstract method
 	abstract void abstractMethod();
 
 	void normalMethod() {
-		System.out.println("this is normal method");
+		System.out.println("This is normal method");
 	}
 
 }

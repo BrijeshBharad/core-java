@@ -5,9 +5,9 @@ public class EnacapsulationMainClass {
 	public static void main(String[] args) {
 		EncapsulationProgram encapsulationProgram = new EncapsulationProgram();
 		encapsulationProgram.setRollNo(25);
-		encapsulationProgram.setName("brijesh");
-		encapsulationProgram.setCollegeName("birla");
-		System.out.println(encapsulationProgram.getRollNo() + " " + encapsulationProgram.getName() + " " + encapsulationProgram.getCollegeName());
+		encapsulationProgram.setName("Brijesh");
+		encapsulationProgram.setCollegeName("Birla");
+		System.out.println("Roll no is "+encapsulationProgram.getRollNo() +" , "+ " Name is " + encapsulationProgram.getName() +" , "+ " College name is " + encapsulationProgram.getCollegeName());
 	}
 
 }

@@ -1,25 +1,26 @@
 package com.oopconcepts;
 
+//joined to HybridInheritance
 public class HybridMultiLevelInheritance extends Parent {
 
 }
 
 class Parent extends Grand {
 	static void fourth() {
-		System.out.println("this is fourth method");
+		System.out.println("This is fourth method");
 	}
 }
 
 class Grand {
 	static void first() {
-		System.out.println("this is first method");
+		System.out.println("This is first method");
 	}
 
 	static void second() {
-		System.out.println("this is second method");
+		System.out.println("This is second method");
 	}
 
 	static void third() {
-		System.out.println("this is third method");
+		System.out.println("This is third method");
 	}
 }

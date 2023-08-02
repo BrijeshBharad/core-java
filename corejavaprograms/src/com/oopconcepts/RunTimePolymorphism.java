@@ -4,7 +4,7 @@ package com.oopconcepts;
 public class RunTimePolymorphism extends TestRunTime {
 
 	void toRide() {
-		System.out.println("then i wrote this");
+		System.out.println("Then i wrote this");
 	}
 
 	public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class RunTimePolymorphism extends TestRunTime {
 class TestRunTime {
 
 	void toRide() {
-		System.out.println("first i wrote this");
+		System.out.println("First i wrote this");
 	}
 
 }

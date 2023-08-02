@@ -9,12 +9,10 @@ public class ComparableExample {
 
 	public static void main(String[] args) {
 		ArrayList<Student> list = new ArrayList<>();
-
 		list.add(new Student(23, "brijesh", "birla"));
 		list.add(new Student(8, "rakesh", "silveroak"));
 		list.add(new Student(17, "anjali", "nirma"));
 		list.add(new Student(53, "narmada", "gujrat"));
-
 		System.out.println(list);
 		Collections.sort(list);
 		System.out.println(list);

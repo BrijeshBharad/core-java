@@ -1,9 +1,12 @@
 package com.oopconcepts;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
-//IdSortComparator joined with IdSortComparator
+
+// joined with IdSortComparator
+//joined with NameSortComparator
 public class ComparatorExample {
 
 	public static void main(String[] args) {
@@ -15,11 +18,18 @@ public class ComparatorExample {
 		arrayList.add(new StudentSecond(53, "narmada", "gujrat"));
 
 		System.out.println(arrayList);
+		// This will sort our list by id
+		System.out.println("Sorting by id");
 		Collections.sort(arrayList, new IdSortComparator());
+		System.out.println(arrayList);
+		// This will sort our list by name
+		System.out.println("sorting by name");
+		Collections.sort(arrayList, new NameSortComparator());
 		System.out.println(arrayList);
 	}
 
 }
+
 class StudentSecond {
 
 	private int id;

@@ -7,14 +7,14 @@ public class FileWriteExample {
 
 	public static void main(String[] args) {
 		try {
-			FileWriter fileWriteObject = new FileWriter("newfile.txt");
-			fileWriteObject.write("i am brijesh bharad : 22 : java developes");
-			fileWriteObject.close();
-			System.out.println("successfully wrote");
+			FileWriter myWriter = new FileWriter("G:\\newfile.txt");
+			myWriter.write("Files in Java might be tricky, but it is fun enough!");
+			myWriter.close();
+			System.out.println("Successfully wrote to the file.");
 		} catch (IOException e) {
-			System.out.println("error occured");
+			System.out.println("An error occurred.");
 			e.printStackTrace();
 		}
 	}
-
+	
 }

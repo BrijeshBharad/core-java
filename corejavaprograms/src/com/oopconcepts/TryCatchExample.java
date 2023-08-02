@@ -3,14 +3,14 @@ package com.oopconcepts;
 public class TryCatchExample {
 
 	public static void main(String[] args) {
-		int upperVar = 50;
-		int downVar = 0;
+		int upper = 50;
+		int down = 0;
 
 		try {
-			int result = upperVar / downVar;
+			int result = upper / down;
 			System.out.println(result);
 		} catch (Exception e) {
-			System.out.println("this is not valide values");
+			System.out.println("This is not valide values");
 		}
 	}
 	
