@@ -9,23 +9,23 @@ public class StringImportantMethods {
 	}
 
 	static void charAtShow() {
-		String numberAtIndex = "Harharmahadev";
+		String numberAtIndex = "Javaisgood";
 		System.out.println((numberAtIndex.charAt(4)));
-		// with this we can know the character on any position
+		// With this we can know the character on any position
 	}
 
 	static void compareStrings() {
-		String firstString = "Ramesh";
-		String secondString = "Ramesh";
+		String firstString = "Python";
+		String secondString = "Python";
 		System.out.println(firstString.compareTo(secondString));
-		// by this we can compare two Strings
+		// By this we can compare two Strings
 	}
 
 	static void letsConcat() {
 		String employeeFirstName = "Brijesh";
 		String employeeSecondName = "Bharad";
 		System.out.println(employeeFirstName.concat(employeeSecondName));
-		// with this we can join two strings
+		// With this we can join two strings
 	}
 	
 }

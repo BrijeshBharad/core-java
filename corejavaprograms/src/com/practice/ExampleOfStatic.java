@@ -1,18 +1,20 @@
 package com.practice;
 
 //With this program we can see the use of static 
-//we can access variable which have static keyword without creating object of that class
+//We can access variable which have static keyword without creating object of that class
 public class ExampleOfStatic {
 
 	public static void main(String[] args) {
-		SecondClass secondObj = new SecondClass();
-		secondObj.phoneName = "10R";
-		secondObj.phoneCost = 45000;
-		SecondClass.brand = "One Plus";
-		secondObj.toShow();
+		SecondClass secondClass = new SecondClass();
+		secondClass.phoneName = "10R";
+		secondClass.phoneCost = 45000;
+		// Here we directly access variable with the class name.
+		SecondClass.brand = "OnePlus";
+		secondClass.toShow();
 	}
 
 }
+
 class SecondClass {
 
 	String phoneName;

@@ -6,7 +6,7 @@ public class EmiCalculator {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("please enter your principl amount");
+		System.out.println("Please enter your principl amount");
 		double principleAmount = scanner.nextDouble();
 		System.out.println("Now please enter your rate of interest ");
 		Double interestInPer = scanner.nextDouble();
@@ -26,6 +26,7 @@ public class EmiCalculator {
 		Double down = raiseDown - 1;
 		Double emi = upper / down;
 		System.out.println(emi);
+		scanner.close();
 	}
 
 }

@@ -1,6 +1,6 @@
 package com.practice;
 
-//to access non-static method we have to make object
+//To access non-static method we have to make object
 public class StaticMethodExample {
 
 	public static void main(String[] args) {

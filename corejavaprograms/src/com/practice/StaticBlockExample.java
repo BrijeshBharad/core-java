@@ -1,6 +1,6 @@
 package com.practice;
 
-//this static block is used when we want to initialize the static variables
+//This static block is used when we want to initialize the static variables
 class main {
 
 	static int staticVarible;

@@ -8,6 +8,7 @@ public class ThisSuperKeywords {
 	}
 
 }
+
 class TestOne extends SuperOne {
 
 	String colour = "White";
@@ -18,6 +19,7 @@ class TestOne extends SuperOne {
 	}
 
 }
+
 class SuperOne {
 
 	String colour = "Black";

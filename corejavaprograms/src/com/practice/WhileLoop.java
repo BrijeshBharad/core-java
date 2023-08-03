@@ -1,8 +1,9 @@
 package com.practice;
+
 import java.util.Scanner;
 
 /*
- * this is a program to find the number is pelidrome or not
+ * This is a program to find the number is palindrome or not
  */
 public class WhileLoop {
 
@@ -20,10 +21,11 @@ public class WhileLoop {
 		}
 
 		if (sum == temporary) {
-			System.out.println("Given number is pelidrome number");
+			System.out.println("Given number is palindrome number");
 		} else {
-			System.out.println("This number is not a pelidrome  number");
+			System.out.println("This number is not a palindrome  number");
 		}
+		scanner.close();
 	}
 
 }

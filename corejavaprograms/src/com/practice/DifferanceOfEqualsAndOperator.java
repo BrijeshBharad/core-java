@@ -12,13 +12,11 @@ public class DifferanceOfEqualsAndOperator {
 		String firstString = "Hello";
 		String secondString = "Hello";
 		String thirdString = new String("Hello");
-
 		System.out.println(firstString == secondString);
-
 		System.out.println(firstString.equals(secondString));
-		// but
-		// == use to compare the pointed values
-		// equals to only compares values
+		
+		// == Use to compare the pointed values
+		// Equals to only compares values
 
 		System.out.println(firstString == thirdString);
 		System.out.println(firstString.equals(thirdString));
@@ -28,7 +26,8 @@ public class DifferanceOfEqualsAndOperator {
 		int firstNumber = 45;
 		int secondNumber = 45;
 		System.out.println(firstNumber == secondNumber);
-		// equalsTo method only works for String
+		// EqualsTo method only works for String
+
 	}
 
 }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class DefineAge {
 
 	public static void main(String[] args) {
+		System.out.println("Enter age of male participant");
 		Scanner scanner = new Scanner(System.in);
 		int age = scanner.nextInt();
 
@@ -20,6 +21,7 @@ public class DefineAge {
 		if (age > 58) {
 			System.out.println("It is a old man");
 		}
+		scanner.close();
 	}
 
 }

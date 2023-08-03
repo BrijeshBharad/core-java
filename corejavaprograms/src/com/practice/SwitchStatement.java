@@ -74,6 +74,7 @@ public class SwitchStatement {
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + number);
 		}
+		scanner.close();
 	}
 
 }
