@@ -1,10 +1,10 @@
 package com.oopconcepts;
 
-//i override in this example which is known as runtime polymorphism
+//I override in this example which is known as runtime polymorphism
 public class RunTimePolymorphism extends TestRunTime {
 
 	void toRide() {
-		System.out.println("Then i wrote this");
+		System.out.println("Then I wrote this");
 	}
 
 	public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class RunTimePolymorphism extends TestRunTime {
 class TestRunTime {
 
 	void toRide() {
-		System.out.println("First i wrote this");
+		System.out.println("First I wrote this");
 	}
 
 }

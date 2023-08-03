@@ -13,7 +13,7 @@ public class SetExample {
 		setString.add("Bhargav");
 		setString.add("Vivek");
 		System.out.println(setString);
-		// it does not take duplicate values
+		// It does not take duplicate values
 	}
 
 }

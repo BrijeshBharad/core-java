@@ -10,7 +10,8 @@ public class HierarchicalInheritance extends Employee {
 }
 
 class Employee {
-//employee class is base class for HierarchicalInheritance and HierarchicalTest
+
+	// Employee class is base class for HierarchicalInheritance and HierarchicalTest
 	void toShow() {
 		System.out.println("This is the method we need in both class");
 	}

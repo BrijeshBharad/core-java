@@ -14,7 +14,7 @@ public class MultiLevelInheritance extends ParentClass {
 class ParentClass extends GrandClass {
 
 	static void fourthMethod() {
-		System.out.println("this is fourth method");
+		System.out.println("This is fourth method");
 	}
 
 }
@@ -22,15 +22,15 @@ class ParentClass extends GrandClass {
 class GrandClass {
 
 	static void firstMethod() {
-		System.out.println("this is first method");
+		System.out.println("This is first method");
 	}
 
 	static void seconfMethod() {
-		System.out.println("this is second method");
+		System.out.println("This is second method");
 	}
 
 	static void thirdMethod() {
-		System.out.println("this is third method");
+		System.out.println("This is third method");
 	}
 
 }

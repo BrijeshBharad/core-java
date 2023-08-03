@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class ArrayListExample {
 
 	public static void main(String[] args) {
-		ArrayList<String> list = new ArrayList<>();
-		list.add("Hello");
-		list.add("World");
-		list.add("$yourname");
+		ArrayList<String> arrayList = new ArrayList<>();
+		arrayList.add("Hello");
+		arrayList.add("World");
+		arrayList.add("$yourname");
 
-		for (String newList : list) {
+		for (String newList : arrayList) {
 			System.out.println(newList);
 		}
 	}

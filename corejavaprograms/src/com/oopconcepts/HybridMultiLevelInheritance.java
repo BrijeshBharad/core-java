@@ -1,6 +1,6 @@
 package com.oopconcepts;
 
-//joined to HybridInheritance
+//Joined to HybridInheritance
 public class HybridMultiLevelInheritance extends Parent {
 
 }

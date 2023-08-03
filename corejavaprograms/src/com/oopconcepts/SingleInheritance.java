@@ -11,7 +11,7 @@ public class SingleInheritance extends SecondaryClass {
 class SecondaryClass {
 
 	static void parentMethod() {
-		System.out.println("this is a parent method");
+		System.out.println("This is a parent method");
 	}
 
 }

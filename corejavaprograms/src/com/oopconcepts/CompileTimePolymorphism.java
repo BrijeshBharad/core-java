@@ -1,20 +1,20 @@
 package com.oopconcepts;
 
-//overloading
+//Overloading
 public class CompileTimePolymorphism {
 
-	void toShow(int rollno) {
-		System.out.println("The rollno is" + " " + rollno);
+	void toShow(int rollNo) {
+		System.out.println("The rollno is" + " " + rollNo);
 	}
 
-	void toShow(int rollno, String name) {
-		System.out.println("The rollno is" + " " + rollno + " " + "and the name is " + name);
+	void toShow(int rollNo, String name) {
+		System.out.println("The rollno is" + " " + rollNo + " " + "and the name is " + name);
 	}
 
 	public static void main(String[] args) {
 		CompileTimePolymorphism compileTimePolymorphism = new CompileTimePolymorphism();
 		compileTimePolymorphism.toShow(25);
-		compileTimePolymorphism.toShow(36, "vivek");
+		compileTimePolymorphism.toShow(36, "Vivek");
 	}
 
 }

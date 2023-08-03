@@ -8,14 +8,14 @@ import java.util.List;
 public class ComparableExample {
 
 	public static void main(String[] args) {
-		ArrayList<Student> list = new ArrayList<>();
-		list.add(new Student(23, "brijesh", "birla"));
-		list.add(new Student(8, "rakesh", "silveroak"));
-		list.add(new Student(17, "anjali", "nirma"));
-		list.add(new Student(53, "narmada", "gujrat"));
-		System.out.println(list);
-		Collections.sort(list);
-		System.out.println(list);
+		ArrayList<Student> arrayList = new ArrayList<>();
+		arrayList.add(new Student(23, "Brijesh", "Birla"));
+		arrayList.add(new Student(8, "Rakesh", "Silveroak"));
+		arrayList.add(new Student(17, "Anjali", "Nirma"));
+		arrayList.add(new Student(53, "Narmada", "Gujrat"));
+		System.out.println(arrayList);
+		Collections.sort(arrayList);
+		System.out.println(arrayList);
 	}
 
 }
@@ -63,9 +63,9 @@ class Student implements Comparable<Student> {
 	}
 
 	@Override
-	public int compareTo(Student o) {
+	public int compareTo(Student student) {
 
-		return this.age - o.age;
+		return this.age - student.age;
 	}
 
 }

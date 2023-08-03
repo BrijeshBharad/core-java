@@ -10,7 +10,7 @@ public class TryCatchExample {
 			int result = upper / down;
 			System.out.println(result);
 		} catch (Exception e) {
-			System.out.println("This is not valide values");
+			System.out.println("This is not valid value");
 		}
 	}
 	

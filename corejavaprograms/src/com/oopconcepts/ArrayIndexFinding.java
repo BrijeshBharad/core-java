@@ -10,6 +10,7 @@ public class ArrayIndexFinding {
 		Scanner scanner = new Scanner(System.in);
 		int compareNumber = scanner.nextInt();
 		System.out.println(findIndex(firstArray, compareNumber));
+		scanner.close();
 	}
 
 	public static int findIndex(int[] firstArray, int number) {

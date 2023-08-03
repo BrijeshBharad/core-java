@@ -5,17 +5,17 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
-// joined with IdSortComparator
-//joined with NameSortComparator
+//Joined with IdSortComparator
+//Joined with NameSortComparator
 public class ComparatorExample {
 
 	public static void main(String[] args) {
 		ArrayList<StudentSecond> arrayList = new ArrayList<>();
 
-		arrayList.add(new StudentSecond(23, "brijesh", "birla"));
-		arrayList.add(new StudentSecond(8, "rakesh", "silveroak"));
-		arrayList.add(new StudentSecond(17, "anjali", "nirma"));
-		arrayList.add(new StudentSecond(53, "narmada", "gujrat"));
+		arrayList.add(new StudentSecond(23, "Brijesh", "Birla"));
+		arrayList.add(new StudentSecond(8, "Rakesh", "Silveroak"));
+		arrayList.add(new StudentSecond(17, "Anjali", "Nirma"));
+		arrayList.add(new StudentSecond(53, "Narmada", "Gujrat"));
 
 		System.out.println(arrayList);
 		// This will sort our list by id
@@ -23,7 +23,7 @@ public class ComparatorExample {
 		Collections.sort(arrayList, new IdSortComparator());
 		System.out.println(arrayList);
 		// This will sort our list by name
-		System.out.println("sorting by name");
+		System.out.println("Sorting by name");
 		Collections.sort(arrayList, new NameSortComparator());
 		System.out.println(arrayList);
 	}

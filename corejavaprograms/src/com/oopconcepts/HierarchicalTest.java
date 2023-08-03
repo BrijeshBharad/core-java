@@ -1,6 +1,6 @@
 package com.oopconcepts;
 
-//joined to HierarchicalInheritance
+//Joined to HierarchicalInheritance
 public class HierarchicalTest extends Employee {
 
 	public static void main(String[] args) {
